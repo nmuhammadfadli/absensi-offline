@@ -4,6 +4,7 @@ import 'core/constants/app_strings.dart';
 import 'core/constants/app_theme.dart';
 import 'providers/student_provider.dart';
 import 'providers/attendance_provider.dart';
+import 'providers/backup_provider.dart';          // ← pastikan ada
 import 'ui/splash/splash_screen.dart';
 
 class AbsensiApp extends StatelessWidget {
@@ -15,6 +16,7 @@ class AbsensiApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => StudentProvider()),
         ChangeNotifierProvider(create: (_) => AttendanceProvider()),
+        ChangeNotifierProvider(create: (_) => BackupProvider()),  // ← pastikan ada
       ],
       child: MaterialApp(
         title: AppStrings.appName,

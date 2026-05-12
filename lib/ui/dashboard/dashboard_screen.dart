@@ -7,6 +7,7 @@ import '../students/student_recap_screen.dart';
 import '../attendance/attendance_screen.dart';
 import '../attendance/attendance_history_screen.dart';
 import '../export/export_pdf_screen.dart';
+import '../backup/backup_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -110,6 +111,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                     _buildStatRow(),
                     const SizedBox(height: 28),
                     _sectionLabel('Menu Utama'),
+                    const SizedBox(height: 12),
                     _buildMenuGrid(),
                     const SizedBox(height: 28),
                     _sectionLabel('Aksi Cepat'),
@@ -363,6 +365,14 @@ class _DashboardScreenState extends State<DashboardScreen>
         color: const Color(0xFFC62828),
         bg: const Color(0xFFFFEBEE),
         page: const ExportPdfScreen(),
+      ),
+      _MenuData(
+        icon: Icons.backup_rounded,
+        label: 'Backup & Restore',
+        subtitle: 'Kelola backup data',
+        color: const Color(0xFF00695C),
+        bg: const Color(0xFFE0F2F1),
+        page: const BackupScreen(),
       ),
     ];
 

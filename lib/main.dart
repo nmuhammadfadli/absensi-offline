@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'providers/student_provider.dart';
 import 'providers/attendance_provider.dart';
+import 'providers/backup_provider.dart';
 import 'ui/splash/splash_screen.dart';
 import 'core/constants/app_theme.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -21,6 +22,7 @@ class AbsensiApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => StudentProvider()),
         ChangeNotifierProvider(create: (_) => AttendanceProvider()),
+        ChangeNotifierProvider(create: (_) => BackupProvider()),
       ],
       child: MaterialApp(
         title: 'Absensi Siswa',
