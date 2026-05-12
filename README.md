@@ -1,20 +1,32 @@
-<<<<<<< HEAD
-# presensi_app
+# Absensi Offline
 
-A new Flutter project.
+Aplikasi absensi siswa berbasis Flutter yang dapat digunakan secara offline. Aplikasi ini memungkinkan pengguna untuk mengelola data siswa, melakukan pencatatan kehadiran, dan mencetak laporan absensi dalam format PDF.
 
-## Getting Started
+##  Fitur Utama
 
-This project is a starting point for a Flutter application.
+- Manajemen data siswa (Tambah, Ubah, Hapus)
+- Pencatatan absensi harian
+- Pencarian siswa
+- Rekap absensi
+- Cetak laporan PDF
+- Penyimpanan data lokal menggunakan SQLite
+- Berjalan sepenuhnya secara offline
 
-A few resources to get you started if this is your first Flutter project:
+## Teknologi yang Digunakan
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter
+- Dart
+- Provider (State Management)
+- SQLite (`sqflite`)
+- PDF Generator (`printing`)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# absensi-offline
->>>>>>> cd13ddc6d785637221b88f41c9f6d8895a719b9e
+## Versi Environment
+
+| Komponen | Versi |
+|--------|--------|
+| Flutter | 3.29.2 |
+| Dart | 3.7.2 |
+| Android NDK | 27.0.12077973 |
+
+
+
